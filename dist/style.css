@@ -128,4 +128,40 @@ h3 {
   width: 50%;
   height: 100%;
 }
+input:invalid {
+  border: 2px solid red;
+}
 
+input:valid {
+  border: 2px solid green;
+}
+
+input:invalid + span::before {
+  content: "⚠ ";
+  color: red;
+}
+/* media */
+@media(max-width: 1130px){
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.left{
+  justify-content: center;
+  align-items: center;
+}
+img{
+  
+  width: 400px;
+  height: 400px;
+  justify-content: center;
+
+}
+.right{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
+}
+}
